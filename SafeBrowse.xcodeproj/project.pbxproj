@@ -7,16 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0385AD24A0277600323238 /* WebBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0385AC24A0277600323238 /* WebBrowserView.swift */; };
+		AC0385AF24A0279A00323238 /* SmallButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0385AE24A0279A00323238 /* SmallButtonView.swift */; };
+		AC0385B124A027FE00323238 /* ArcAndDataAnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0385B024A027FE00323238 /* ArcAndDataAnalyticsView.swift */; };
 		ACDED36D249F4B58007B7FFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDED36C249F4B58007B7FFB /* AppDelegate.swift */; };
 		ACDED36F249F4B58007B7FFB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDED36E249F4B58007B7FFB /* SceneDelegate.swift */; };
 		ACDED371249F4B58007B7FFB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDED370249F4B58007B7FFB /* ContentView.swift */; };
 		ACDED373249F4B5C007B7FFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDED372249F4B5C007B7FFB /* Assets.xcassets */; };
 		ACDED376249F4B5C007B7FFB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACDED375249F4B5C007B7FFB /* Preview Assets.xcassets */; };
 		ACDED379249F4B5C007B7FFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACDED377249F4B5C007B7FFB /* LaunchScreen.storyboard */; };
+		ACDED381249F6D10007B7FFB /* MyTextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDED380249F6D10007B7FFB /* MyTextViews.swift */; };
+		ACDED383249F6D67007B7FFB /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDED382249F6D67007B7FFB /* Enums.swift */; };
+		ACDED38A249F7C7E007B7FFB /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDED389249F6DFF007B7FFB /* SFProText-Bold.ttf */; };
+		ACDED38B249F7C80007B7FFB /* SFProText-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDED386249F6DFF007B7FFB /* SFProText-Heavy.ttf */; };
+		ACDED38C249F7C82007B7FFB /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDED387249F6DFF007B7FFB /* SFProText-Medium.ttf */; };
+		ACDED38D249F7C85007B7FFB /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDED385249F6DFE007B7FFB /* SFProText-Regular.ttf */; };
+		ACDED38E249F7C88007B7FFB /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDED388249F6DFF007B7FFB /* SFProText-Semibold.ttf */; };
+		ACDED390249FB9CC007B7FFB /* ViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDED38F249FB9CC007B7FFB /* ViewModal.swift */; };
+		ACDED395249FC440007B7FFB /* ModalPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDED394249FC440007B7FFB /* ModalPopUpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		ACDED369249F4B58007B7FFB /* SafeBrowse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeBrowse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0385AC24A0277600323238 /* WebBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBrowserView.swift; sourceTree = "<group>"; };
+		AC0385AE24A0279A00323238 /* SmallButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallButtonView.swift; sourceTree = "<group>"; };
+		AC0385B024A027FE00323238 /* ArcAndDataAnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcAndDataAnalyticsView.swift; sourceTree = "<group>"; };
+		ACDED369249F4B58007B7FFB /* Safe Browser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safe Browser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACDED36C249F4B58007B7FFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ACDED36E249F4B58007B7FFB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ACDED370249F4B58007B7FFB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -24,6 +39,15 @@
 		ACDED375249F4B5C007B7FFB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		ACDED378249F4B5C007B7FFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACDED37A249F4B5C007B7FFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACDED380249F6D10007B7FFB /* MyTextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTextViews.swift; sourceTree = "<group>"; };
+		ACDED382249F6D67007B7FFB /* Enums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		ACDED385249F6DFE007B7FFB /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		ACDED386249F6DFF007B7FFB /* SFProText-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Heavy.ttf"; sourceTree = "<group>"; };
+		ACDED387249F6DFF007B7FFB /* SFProText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Medium.ttf"; sourceTree = "<group>"; };
+		ACDED388249F6DFF007B7FFB /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.ttf"; sourceTree = "<group>"; };
+		ACDED389249F6DFF007B7FFB /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Bold.ttf"; sourceTree = "<group>"; };
+		ACDED38F249FB9CC007B7FFB /* ViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModal.swift; sourceTree = "<group>"; };
+		ACDED394249FC440007B7FFB /* ModalPopUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalPopUpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +72,7 @@
 		ACDED36A249F4B58007B7FFB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ACDED369249F4B58007B7FFB /* SafeBrowse.app */,
+				ACDED369249F4B58007B7FFB /* Safe Browser.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -56,9 +80,12 @@
 		ACDED36B249F4B58007B7FFB /* SafeBrowse */ = {
 			isa = PBXGroup;
 			children = (
+				ACDED384249F6DE0007B7FFB /* Fonts */,
 				ACDED36C249F4B58007B7FFB /* AppDelegate.swift */,
 				ACDED36E249F4B58007B7FFB /* SceneDelegate.swift */,
-				ACDED370249F4B58007B7FFB /* ContentView.swift */,
+				ACDED391249FC406007B7FFB /* View */,
+				ACDED392249FC413007B7FFB /* ViewModal */,
+				ACDED393249FC425007B7FFB /* Enum */,
 				ACDED372249F4B5C007B7FFB /* Assets.xcassets */,
 				ACDED377249F4B5C007B7FFB /* LaunchScreen.storyboard */,
 				ACDED37A249F4B5C007B7FFB /* Info.plist */,
@@ -73,6 +100,47 @@
 				ACDED375249F4B5C007B7FFB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		ACDED384249F6DE0007B7FFB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				ACDED389249F6DFF007B7FFB /* SFProText-Bold.ttf */,
+				ACDED386249F6DFF007B7FFB /* SFProText-Heavy.ttf */,
+				ACDED387249F6DFF007B7FFB /* SFProText-Medium.ttf */,
+				ACDED385249F6DFE007B7FFB /* SFProText-Regular.ttf */,
+				ACDED388249F6DFF007B7FFB /* SFProText-Semibold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		ACDED391249FC406007B7FFB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				ACDED370249F4B58007B7FFB /* ContentView.swift */,
+				AC0385AC24A0277600323238 /* WebBrowserView.swift */,
+				AC0385AE24A0279A00323238 /* SmallButtonView.swift */,
+				ACDED380249F6D10007B7FFB /* MyTextViews.swift */,
+				ACDED394249FC440007B7FFB /* ModalPopUpView.swift */,
+				AC0385B024A027FE00323238 /* ArcAndDataAnalyticsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		ACDED392249FC413007B7FFB /* ViewModal */ = {
+			isa = PBXGroup;
+			children = (
+				ACDED38F249FB9CC007B7FFB /* ViewModal.swift */,
+			);
+			path = ViewModal;
+			sourceTree = "<group>";
+		};
+		ACDED393249FC425007B7FFB /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				ACDED382249F6D67007B7FFB /* Enums.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -92,7 +160,7 @@
 			);
 			name = SafeBrowse;
 			productName = SafeBrowse;
-			productReference = ACDED369249F4B58007B7FFB /* SafeBrowse.app */;
+			productReference = ACDED369249F4B58007B7FFB /* Safe Browser.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +203,12 @@
 			files = (
 				ACDED379249F4B5C007B7FFB /* LaunchScreen.storyboard in Resources */,
 				ACDED376249F4B5C007B7FFB /* Preview Assets.xcassets in Resources */,
+				ACDED38D249F7C85007B7FFB /* SFProText-Regular.ttf in Resources */,
 				ACDED373249F4B5C007B7FFB /* Assets.xcassets in Resources */,
+				ACDED38C249F7C82007B7FFB /* SFProText-Medium.ttf in Resources */,
+				ACDED38E249F7C88007B7FFB /* SFProText-Semibold.ttf in Resources */,
+				ACDED38A249F7C7E007B7FFB /* SFProText-Bold.ttf in Resources */,
+				ACDED38B249F7C80007B7FFB /* SFProText-Heavy.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,7 +219,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC0385AF24A0279A00323238 /* SmallButtonView.swift in Sources */,
+				ACDED390249FB9CC007B7FFB /* ViewModal.swift in Sources */,
+				AC0385B124A027FE00323238 /* ArcAndDataAnalyticsView.swift in Sources */,
+				ACDED381249F6D10007B7FFB /* MyTextViews.swift in Sources */,
+				ACDED383249F6D67007B7FFB /* Enums.swift in Sources */,
 				ACDED36D249F4B58007B7FFB /* AppDelegate.swift in Sources */,
+				AC0385AD24A0277600323238 /* WebBrowserView.swift in Sources */,
+				ACDED395249FC440007B7FFB /* ModalPopUpView.swift in Sources */,
 				ACDED36F249F4B58007B7FFB /* SceneDelegate.swift in Sources */,
 				ACDED371249F4B58007B7FFB /* ContentView.swift in Sources */,
 			);
@@ -294,9 +374,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Softech.SafeBrowse;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Safe Browser";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -314,9 +394,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = Softech.SafeBrowse;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Safe Browser";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
