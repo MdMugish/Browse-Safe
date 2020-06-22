@@ -12,12 +12,12 @@ import SafariServices
 struct ContentView: View {
     
     
-    @ObservedObject var WebViewModal = viewModal()
+    @ObservedObject var webViewModal = ViewModel()
     
     var body: some View {
         
         VStack{
-            SearchBar(WebViewModal : WebViewModal).padding(.top, 8).padding(.bottom, 8).background(Color.white)
+            SearchBar(WebViewModal : webViewModal).padding(.top, 8).padding(.bottom, 8).background(Color.white)
             
             Color(red: 0.78, green: 0.75, blue: 0.75).frame(width: UIScreen.main.bounds.width, height: 1, alignment: .center).padding(.top, -8)
             
@@ -25,22 +25,22 @@ struct ContentView: View {
                 
                 
                 VStack{
-                    Favourites(WebViewModal: WebViewModal)
-                    FrequentlyVisited(WebViewModal: WebViewModal)
+                    Favourites(WebViewModal: webViewModal)
+                    FrequentlyVisited(WebViewModal: webViewModal)
                     FrequentlyVisitedAnalytics()
-                    Blocked(presendBlockView: $WebViewModal.presentBlockView, WebViewModal: WebViewModal)
+                    Blocked(presendBlockView: $webViewModal.presentBlockView, WebViewModal: webViewModal)
                     
                     Spacer()
                 }
             }).padding(.top, -16).onTapGesture {
                 self.endEditing()
             }
-        }.sheet(isPresented: $WebViewModal.status){
-            WebBrowserView(WebViewModal: self.WebViewModal)
+        }.sheet(isPresented: $webViewModal.status){
+            WebBrowserView(WebViewModal: self.webViewModal)
         }.background(Color(red: 0.89, green: 0.89, blue: 0.89))
             
             
-            .modal(isPresented: $WebViewModal.presentBlockView){
+            .modal(isPresented: $webViewModal.presentBlockView){
                 
                 
                 VStack  {
@@ -51,24 +51,24 @@ struct ContentView: View {
                     ZStack(alignment : .trailing){
                         Image("blockInputImage").resizable().frame(width: 283, height: 33, alignment: .center).scaledToFit().padding()
                         
-                        TextField("http://", text: self.$WebViewModal.enterNewWebsiteForBlock, onEditingChanged: { (changed) in
+                        TextField("http://", text: self.$webViewModal.enterNewWebsiteForBlock, onEditingChanged: { (changed) in
                             
                         }) {
                             
-                           self.WebViewModal.addblockWebsite()
-                            self.WebViewModal.enterNewWebsiteForBlock = ""
-                            self.WebViewModal.presentBlockView = false
+                           self.webViewModal.addblockWebsite()
+                            self.webViewModal.enterNewWebsiteForBlock = ""
+                            self.webViewModal.presentBlockView = false
                             
                         }.keyboardType(.webSearch).autocapitalization(.none) .disableAutocorrection(true)
                             .onTapGesture {
-                              self.WebViewModal.enterNewWebsiteForBlock = ""
+                              self.webViewModal.enterNewWebsiteForBlock = ""
                         }.padding(.horizontal, 40)
                         
                         
                         Button(action: {
-                            self.WebViewModal.addblockWebsite()
-                            self.WebViewModal.enterNewWebsiteForBlock = ""
-                            self.WebViewModal.presentBlockView = false
+                            self.webViewModal.addblockWebsite()
+                            self.webViewModal.enterNewWebsiteForBlock = ""
+                            self.webViewModal.presentBlockView = false
                         }) {
                             MyTextViews(value: "Add", size: 12, style: .SFProText_semibold).foregroundColor(.white).padding(.trailing, 28)
                         }
@@ -76,8 +76,8 @@ struct ContentView: View {
                     }
                     
                     Button(action: {
-                        self.WebViewModal.enterNewWebsiteForBlock = ""
-                        self.WebViewModal.presentBlockView = false
+                        self.webViewModal.enterNewWebsiteForBlock = ""
+                        self.webViewModal.presentBlockView = false
                     }) {
                         MyTextViews(value: "Cancel", size: 16, style: .SFProText_regular).frame(width: 124, height: 33, alignment: .center).background(Color(red: 0.11, green: 0.10, blue: 0.27).cornerRadius(17)).foregroundColor(.white)
                     }
@@ -157,7 +157,7 @@ struct SafariView: UIViewControllerRepresentable{
 
 struct SearchBar : View{
     
-    @ObservedObject var WebViewModal : viewModal
+    @ObservedObject var WebViewModal : ViewModel
     
     var body : some View{
         ZStack{
@@ -185,7 +185,7 @@ struct SearchBar : View{
 
 struct Favourites : View{
     
-    @ObservedObject var WebViewModal : viewModal
+    @ObservedObject var WebViewModal : ViewModel
     
     var body : some View{
         VStack(alignment : .leading){
@@ -235,7 +235,7 @@ struct Favourites : View{
 
 struct FrequentlyVisited : View{
     
-    @ObservedObject var WebViewModal : viewModal
+    @ObservedObject var WebViewModal : ViewModel
     
     var body : some View{
         VStack(alignment : .leading){
@@ -284,7 +284,7 @@ struct FrequentlyVisited : View{
 
 struct Blocked : View{
     @Binding var presendBlockView : Bool
-    @ObservedObject var WebViewModal : viewModal
+    @ObservedObject var WebViewModal : ViewModel
     var body : some View{
         
         VStack(alignment : .leading){

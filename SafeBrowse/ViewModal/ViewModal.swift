@@ -11,9 +11,10 @@ import Combine
 
 
 
-class viewModal : ObservableObject , Identifiable {
+class ViewModel : ObservableObject , Identifiable {
     
     var id =  UUID()
+    
     @Published var website : String = ""
     
     @Published var status : Bool = false {
@@ -30,7 +31,8 @@ class viewModal : ObservableObject , Identifiable {
     @Published var presentBlockView : Bool = false
     @Published var timerCount  : Int = 0
     @Published var enterNewWebsiteForBlock = ""
-    var timer : Timer?
+    
+    private var timer : Timer?
     
     
     func checkWebsite() -> Bool {
@@ -41,7 +43,7 @@ class viewModal : ObservableObject , Identifiable {
             website = "https://\(website)"
             return true
         }else{
-            website = "https://\(website)"
+            website = "\(website)"
             return true
         }
         

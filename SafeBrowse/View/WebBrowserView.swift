@@ -10,7 +10,7 @@ import SafariServices
 
 struct WebBrowserView : View{
     
-    @ObservedObject var WebViewModal : viewModal
+    @ObservedObject var WebViewModal : ViewModel
     
     var body : some View{
         VStack{

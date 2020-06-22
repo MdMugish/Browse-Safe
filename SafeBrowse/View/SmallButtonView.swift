@@ -13,7 +13,7 @@ struct SmallButtonView : View{
     @State var heading: String
     @State var title : String
     @State var color : Color
-     @ObservedObject var WebViewModal : viewModal
+     @ObservedObject var WebViewModal : ViewModel
     var body : some View{
         VStack{
             ZStack{
