@@ -67,11 +67,21 @@ class viewModal : ObservableObject , Identifiable {
         }
         
         if enterNewWebsiteForBlock.contains("http://") {
-             filterValue  = filterValue.replacingOccurrences(of: "http://", with: "", options: [.caseInsensitive, .regularExpression])
+            if filterValue == ""{
+                 filterValue  = enterNewWebsiteForBlock.replacingOccurrences(of: "http://", with: "", options: [.caseInsensitive, .regularExpression])
+            }else{
+                 filterValue  = filterValue.replacingOccurrences(of: "http://", with: "", options: [.caseInsensitive, .regularExpression])
+            }
+            
         }
         
         if enterNewWebsiteForBlock.contains(".com") {
-            filterValue  = filterValue.replacingOccurrences(of: ".com", with: "", options: [.caseInsensitive, .regularExpression])
+            if filterValue == ""{
+                filterValue  = enterNewWebsiteForBlock.replacingOccurrences(of: ".com", with: "", options: [.caseInsensitive, .regularExpression])
+            }else{
+                 filterValue  = filterValue.replacingOccurrences(of: ".com", with: "", options: [.caseInsensitive, .regularExpression])
+            }
+           
         }
 
         if filterValue != ""{
