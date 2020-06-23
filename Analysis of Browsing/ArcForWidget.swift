@@ -12,6 +12,7 @@ import SafariServices
 
 
 struct FrequentlyVisitedAnalyticsWidget : View {
+    
     var body : some View{
         
         HStack{
