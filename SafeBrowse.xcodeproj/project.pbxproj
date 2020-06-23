@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04DB178324A213D3008687C3 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DB178224A213D3008687C3 /* WidgetKit.framework */; };
+		04DB178524A213D3008687C3 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04DB178424A213D3008687C3 /* SwiftUI.framework */; };
+		04DB178824A213D3008687C3 /* Analysis_of_Browsing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB178724A213D3008687C3 /* Analysis_of_Browsing.swift */; };
+		04DB178B24A213D6008687C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04DB178A24A213D6008687C3 /* Assets.xcassets */; };
+		04DB178D24A213D6008687C3 /* Analysis_of_Browsing.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 04DB178924A213D3008687C3 /* Analysis_of_Browsing.intentdefinition */; };
+		04DB178E24A213D6008687C3 /* Analysis_of_Browsing.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 04DB178924A213D3008687C3 /* Analysis_of_Browsing.intentdefinition */; };
+		04DB179124A213D6008687C3 /* Analysis of BrowsingExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 04DB178024A213D3008687C3 /* Analysis of BrowsingExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		04DB179724A21491008687C3 /* DrawArc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB179624A21491008687C3 /* DrawArc.swift */; };
+		04DB179A24A215A6008687C3 /* MyTextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDED380249F6D10007B7FFB /* MyTextViews.swift */; };
+		04DB179B24A215BB008687C3 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDED382249F6D67007B7FFB /* Enums.swift */; };
+		04DB179C24A215C3008687C3 /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDED387249F6DFF007B7FFB /* SFProText-Medium.ttf */; };
+		04DB179D24A215C3008687C3 /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDED388249F6DFF007B7FFB /* SFProText-Semibold.ttf */; };
+		04DB179E24A215C3008687C3 /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDED385249F6DFE007B7FFB /* SFProText-Regular.ttf */; };
+		04DB179F24A215C3008687C3 /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDED389249F6DFF007B7FFB /* SFProText-Bold.ttf */; };
+		04DB17A024A215C3008687C3 /* SFProText-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ACDED386249F6DFF007B7FFB /* SFProText-Heavy.ttf */; };
+		04DB17A524A2288B008687C3 /* ArcForWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04DB17A324A22885008687C3 /* ArcForWidget.swift */; };
 		AC0385AD24A0277600323238 /* WebBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0385AC24A0277600323238 /* WebBrowserView.swift */; };
 		AC0385AF24A0279A00323238 /* SmallButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0385AE24A0279A00323238 /* SmallButtonView.swift */; };
 		AC0385B124A027FE00323238 /* ArcAndDataAnalyticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0385B024A027FE00323238 /* ArcAndDataAnalyticsView.swift */; };
@@ -27,7 +43,40 @@
 		ACDED395249FC440007B7FFB /* ModalPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACDED394249FC440007B7FFB /* ModalPopUpView.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		04DB178F24A213D6008687C3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ACDED361249F4B58007B7FFB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 04DB177F24A213D3008687C3;
+			remoteInfo = "Analysis of BrowsingExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		04DB179224A213D6008687C3 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				04DB179124A213D6008687C3 /* Analysis of BrowsingExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		04DB178024A213D3008687C3 /* Analysis of BrowsingExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Analysis of BrowsingExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		04DB178224A213D3008687C3 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		04DB178424A213D3008687C3 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		04DB178724A213D3008687C3 /* Analysis_of_Browsing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysis_of_Browsing.swift; sourceTree = "<group>"; };
+		04DB178924A213D3008687C3 /* Analysis_of_Browsing.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Analysis_of_Browsing.intentdefinition; sourceTree = "<group>"; };
+		04DB178A24A213D6008687C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		04DB178C24A213D6008687C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04DB179624A21491008687C3 /* DrawArc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawArc.swift; sourceTree = "<group>"; };
+		04DB17A324A22885008687C3 /* ArcForWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcForWidget.swift; sourceTree = "<group>"; };
 		AC0385AC24A0277600323238 /* WebBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBrowserView.swift; sourceTree = "<group>"; };
 		AC0385AE24A0279A00323238 /* SmallButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmallButtonView.swift; sourceTree = "<group>"; };
 		AC0385B024A027FE00323238 /* ArcAndDataAnalyticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcAndDataAnalyticsView.swift; sourceTree = "<group>"; };
@@ -51,6 +100,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		04DB177D24A213D3008687C3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DB178524A213D3008687C3 /* SwiftUI.framework in Frameworks */,
+				04DB178324A213D3008687C3 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACDED366249F4B58007B7FFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -61,10 +119,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04DB178124A213D3008687C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04DB178224A213D3008687C3 /* WidgetKit.framework */,
+				04DB178424A213D3008687C3 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		04DB178624A213D3008687C3 /* Analysis of Browsing */ = {
+			isa = PBXGroup;
+			children = (
+				04DB178724A213D3008687C3 /* Analysis_of_Browsing.swift */,
+				04DB17A324A22885008687C3 /* ArcForWidget.swift */,
+				04DB178924A213D3008687C3 /* Analysis_of_Browsing.intentdefinition */,
+				04DB178A24A213D6008687C3 /* Assets.xcassets */,
+				04DB178C24A213D6008687C3 /* Info.plist */,
+			);
+			path = "Analysis of Browsing";
+			sourceTree = "<group>";
+		};
 		ACDED360249F4B58007B7FFB = {
 			isa = PBXGroup;
 			children = (
 				ACDED36B249F4B58007B7FFB /* SafeBrowse */,
+				04DB178624A213D3008687C3 /* Analysis of Browsing */,
+				04DB178124A213D3008687C3 /* Frameworks */,
 				ACDED36A249F4B58007B7FFB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				ACDED369249F4B58007B7FFB /* Safe Browser.app */,
+				04DB178024A213D3008687C3 /* Analysis of BrowsingExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +205,7 @@
 				ACDED380249F6D10007B7FFB /* MyTextViews.swift */,
 				ACDED394249FC440007B7FFB /* ModalPopUpView.swift */,
 				AC0385B024A027FE00323238 /* ArcAndDataAnalyticsView.swift */,
+				04DB179624A21491008687C3 /* DrawArc.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -146,6 +229,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		04DB177F24A213D3008687C3 /* Analysis of BrowsingExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 04DB179524A213D6008687C3 /* Build configuration list for PBXNativeTarget "Analysis of BrowsingExtension" */;
+			buildPhases = (
+				04DB177C24A213D3008687C3 /* Sources */,
+				04DB177D24A213D3008687C3 /* Frameworks */,
+				04DB177E24A213D3008687C3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Analysis of BrowsingExtension";
+			productName = "Analysis of BrowsingExtension";
+			productReference = 04DB178024A213D3008687C3 /* Analysis of BrowsingExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		ACDED368249F4B58007B7FFB /* SafeBrowse */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = ACDED37D249F4B5C007B7FFB /* Build configuration list for PBXNativeTarget "SafeBrowse" */;
@@ -153,10 +253,12 @@
 				ACDED365249F4B58007B7FFB /* Sources */,
 				ACDED366249F4B58007B7FFB /* Frameworks */,
 				ACDED367249F4B58007B7FFB /* Resources */,
+				04DB179224A213D6008687C3 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				04DB179024A213D6008687C3 /* PBXTargetDependency */,
 			);
 			name = SafeBrowse;
 			productName = SafeBrowse;
@@ -169,10 +271,13 @@
 		ACDED361249F4B58007B7FFB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1130;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "mohammad mugish";
 				TargetAttributes = {
+					04DB177F24A213D3008687C3 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					ACDED368249F4B58007B7FFB = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
@@ -192,11 +297,25 @@
 			projectRoot = "";
 			targets = (
 				ACDED368249F4B58007B7FFB /* SafeBrowse */,
+				04DB177F24A213D3008687C3 /* Analysis of BrowsingExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		04DB177E24A213D3008687C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DB178B24A213D6008687C3 /* Assets.xcassets in Resources */,
+				04DB179C24A215C3008687C3 /* SFProText-Medium.ttf in Resources */,
+				04DB179F24A215C3008687C3 /* SFProText-Bold.ttf in Resources */,
+				04DB179D24A215C3008687C3 /* SFProText-Semibold.ttf in Resources */,
+				04DB17A024A215C3008687C3 /* SFProText-Heavy.ttf in Resources */,
+				04DB179E24A215C3008687C3 /* SFProText-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACDED367249F4B58007B7FFB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -215,17 +334,31 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		04DB177C24A213D3008687C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04DB178D24A213D6008687C3 /* Analysis_of_Browsing.intentdefinition in Sources */,
+				04DB178824A213D3008687C3 /* Analysis_of_Browsing.swift in Sources */,
+				04DB179A24A215A6008687C3 /* MyTextViews.swift in Sources */,
+				04DB179B24A215BB008687C3 /* Enums.swift in Sources */,
+				04DB17A524A2288B008687C3 /* ArcForWidget.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		ACDED365249F4B58007B7FFB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				AC0385AF24A0279A00323238 /* SmallButtonView.swift in Sources */,
+				04DB178E24A213D6008687C3 /* Analysis_of_Browsing.intentdefinition in Sources */,
 				ACDED390249FB9CC007B7FFB /* ViewModal.swift in Sources */,
 				AC0385B124A027FE00323238 /* ArcAndDataAnalyticsView.swift in Sources */,
 				ACDED381249F6D10007B7FFB /* MyTextViews.swift in Sources */,
 				ACDED383249F6D67007B7FFB /* Enums.swift in Sources */,
 				ACDED36D249F4B58007B7FFB /* AppDelegate.swift in Sources */,
 				AC0385AD24A0277600323238 /* WebBrowserView.swift in Sources */,
+				04DB179724A21491008687C3 /* DrawArc.swift in Sources */,
 				ACDED395249FC440007B7FFB /* ModalPopUpView.swift in Sources */,
 				ACDED36F249F4B58007B7FFB /* SceneDelegate.swift in Sources */,
 				ACDED371249F4B58007B7FFB /* ContentView.swift in Sources */,
@@ -233,6 +366,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		04DB179024A213D6008687C3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 04DB177F24A213D3008687C3 /* Analysis of BrowsingExtension */;
+			targetProxy = 04DB178F24A213D6008687C3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		ACDED377249F4B5C007B7FFB /* LaunchScreen.storyboard */ = {
@@ -246,6 +387,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		04DB179324A213D6008687C3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 898D22Z9A6;
+				INFOPLIST_FILE = "Analysis of Browsing/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Softech.SafeBrowse.Analysis-of-Browsing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		04DB179424A213D6008687C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 898D22Z9A6;
+				INFOPLIST_FILE = "Analysis of Browsing/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Softech.SafeBrowse.Analysis-of-Browsing";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		ACDED37B249F4B5C007B7FFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -363,6 +550,7 @@
 		ACDED37E249F4B5C007B7FFB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SafeBrowse/Preview Content\"";
@@ -383,6 +571,7 @@
 		ACDED37F249F4B5C007B7FFB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"SafeBrowse/Preview Content\"";
@@ -403,6 +592,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		04DB179524A213D6008687C3 /* Build configuration list for PBXNativeTarget "Analysis of BrowsingExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				04DB179324A213D6008687C3 /* Debug */,
+				04DB179424A213D6008687C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		ACDED364249F4B58007B7FFB /* Build configuration list for PBXProject "SafeBrowse" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
